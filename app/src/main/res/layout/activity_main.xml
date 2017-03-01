@@ -21,14 +21,21 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <im.delight.android.webview.AdvancedWebView
+        android:id="@+id/newWeb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    </im.delight.android.webview.AdvancedWebView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:id="@+id/loader"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical|center_horizontal|center"/>
 
 </android.support.design.widget.CoordinatorLayout>
