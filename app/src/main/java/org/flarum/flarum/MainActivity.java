@@ -17,7 +17,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-
 import im.delight.android.webview.AdvancedWebView;
 
 public class MainActivity extends AppCompatActivity implements AdvancedWebView.Listener{
