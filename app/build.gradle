@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "org.flarum.flarum"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 25
-        versionCode 1
+        versionCode 25
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -26,6 +26,12 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:design:25.2.0'
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    compile 'com.google.firebase:firebase-core:9.2.0'
+    compile 'com.android.support:multidex:1.0.1'
     compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
     testCompile 'junit:junit:4.12'
 }
+// enamble for google Firebase console
+apply plugin: 'com.google.gms.google-services'
