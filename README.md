@@ -8,9 +8,8 @@ A WebView based Android application which will embed your flarum forum inside an
 
 3) In the MainActivity.java
 
-```Java
-private static final String  url = "https://discuss.flarum.org/";
-```
+`private static final String  url = "https://discuss.flarum.org/";`
+
 Edit the url to yours.
 
 4) Do any changes to the code - Change colors, Package names, Add splash screens
