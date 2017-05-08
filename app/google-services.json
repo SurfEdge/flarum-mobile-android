@@ -1,7 +1,0 @@
-Replace this file with your **google-services.json** config file.
-
-## How to download google-services.json file?
-1. Login to [Firebase Console](https://console.firebase.google.com).
-2. Create a new project or select existing one.
-3. Go to Settings >> Project Settings
-4. From General Settings section download **google-services.json** file.
