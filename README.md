@@ -18,6 +18,18 @@ Edit the url to yours.
 
 6) Good to go :)
 
+## How to enable Firebase Notifications
+
+Download and upload **google-services.json** config file to **flarum-mobile-android/app** folder.
+
+This file contains configuration details such as keys and identifiers, for the services you enabled.
+
+### How to download google-services.json file?
+1. Login to [Firebase Console](https://console.firebase.google.com).
+2. Create a new project or select existing one.
+3. Go to Settings >> Project Settings
+4. From General Settings section download **google-services.json** file.
+
 ## Known Issues
 * Facebook login inside app is not working
 * ~~File Upload plugin not working~~ - Fixed with Advanced webview
