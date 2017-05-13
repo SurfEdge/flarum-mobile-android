@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdvancedWebView.L
     private ProgressBar mPbar = null;
 
     private static final String  url = "https://discuss.flarum.org/";
+	String webURL, webTitle ;
 
 
     @Override
@@ -108,7 +109,14 @@ public class MainActivity extends AppCompatActivity implements AdvancedWebView.L
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.share_btn) {
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            String shareBody = webTitle+":\n"+webURL;
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Flarum Community");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+            startActivity(Intent.createChooser(sharingIntent, "Share using"));
+        } else if (id == R.id.action_settings) {
             return true;
         }
 
@@ -154,6 +162,8 @@ public class MainActivity extends AppCompatActivity implements AdvancedWebView.L
 
     @Override
     public void onPageFinished(String url) {
+		webURL = webView.getUrl();
+        webTitle = webView.getTitle();
 
     }
 
