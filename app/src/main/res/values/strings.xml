@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Flarum Community</string>
+	<string name="action_share">Share</string>
     <string name="action_settings">Settings</string>
 </resources>
